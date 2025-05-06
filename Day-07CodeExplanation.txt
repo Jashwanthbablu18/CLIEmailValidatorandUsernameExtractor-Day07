@@ -1,0 +1,43 @@
+This is a  program  which was designed as part of my "30-Day Python Challenge." 
+
+Functionalities of Functions:
+1. show_intro():
+   - This Function to represent introduction of this assignment / Project. Starting with a little welcome message.
+
+2. ValidateEmail(email):
+   - This function takes an email address as a parameter into function and do a basic validation on email address.
+   - It removes any extra spaces from email by using strip().
+   - Validates email address by checking weather it contains '@' and '.'.
+   - This function also ensures that the email address isn't starting and ending with '@' and have atleast 5 characters of length.
+   - And finally returns a boolean value which indicates validity of email.
+
+3. ExtractUsername(e):
+   - This function extracts the username part of the email, which is the substring before the "@" symbol.
+   - It assumes that the email has already been validated.
+
+main():
+  - Calls show_intro() to display the introduction msg.
+  - Asks the user to enter their email address, and removes any extra spaces by using strip().
+  - Uses ValidateEmail(email) to check if the entered email is valid and prints the corresponding status message.
+  - If the email is valid:
+    - Extracts the username using ExtractUsername() function.
+    - Prints various transformations of the username:
+      - The raw username.
+      - The username in lowercase and uppercase.
+      - Based upon the username length it displays first three letters of the username 
+      - A version of the username with dots replaced by underscores for stylistic purposes.
+  - If the email is invalid, it prompts the user to enter a valid email next time.
+
+
+- The if __name__ == "__main__": construct ensures that main() is called only when this script is executed directly, not when imported as a module in another script.
+
+What I've learnt:
+- Strings: Strings is a sequence of characters to represent a text. or In general, String is a collection of characters
+  to represent a text.
+- Python doesn't have any 'char' datatype to represent single character, in python single character is also considered as a 
+  string with length of 1. 
+- Strings in python are considered as '0-based indexed' (Indices starts from 0).
+- Strings can represent in ' '(Single quote) or " "(Double quote) or """ """(triple quotes / multi-line string)
+- Strings are immutable, means once they are created they cannot be changed but can be manipulated using several string
+  methods.
+- Some string methods are: .len(), .upper(), .lower(), .strip(), .replace()... 
